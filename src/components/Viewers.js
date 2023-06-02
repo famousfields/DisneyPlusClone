@@ -52,5 +52,6 @@ const Wrap = styled.div`
         border-color: rgba(249,249, 249, 0.8);
         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, 
         rgb(0 0 0 / 73%) 0px 30px 22px -10px;
+        
     }
 `
