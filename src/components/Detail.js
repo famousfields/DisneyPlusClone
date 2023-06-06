@@ -8,7 +8,7 @@ function Detail() {
         <img src = "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg"/>
       </Background>
       <ImageTitle>
-        <img src = "https://www.youtube.com/redirect?event=live_chat&redir_token=QUFFLUhqbkFLOGdnMFlWalNJVlBiZElvX0w5bGNZUlZ5d3xBQ3Jtc0tsd3hFZURmTkgzOTZvckVtdTRTQUlocGlXX0ZEOW5mS0NnRWRTRkR6QjA3VkYwZnM1cEp4OTJGdUQ0T2xTbGxiNFV4MFVfQ0Z6cVZ2anZ4dGpkbm5HeW1Kamk1UVR1SEh4ZHNBS2hJZmY5dnFVeWkzdw&q=https%3A%2F%2Fprod-ripcut-delivery.disney-plus.net%2Fv1%2Fvariant%2Fdisney%2FD7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2%2Fscale%3Fwidth%3D1440%26aspectRatio%3D1.78" />
+        <img src = "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78" />
       </ImageTitle>
       <Controls>
           <PlayButton>
@@ -23,9 +23,15 @@ function Detail() {
             <span>+</span>
           </AddButton>
           <GroupWatchButton>
-            
+              <img src = "/images/group-icon.png"/>
           </GroupWatchButton>
       </Controls>
+      <SubTitle >
+        SubTite
+      </SubTitle>
+      <Description>
+        Description
+      </Description>
     </Container>
   )
 }
@@ -60,14 +66,14 @@ const ImageTitle = styled.div`
   min-width: 200px;
 
   img{
-    width: 100%:
+    width: 100%;
     height: 100%;
     object-fit: contain;
   }
 `
 const Controls = styled.div`
   display: flex;
-  align-items:center;
+  align-items: center;
 `
 const PlayButton = styled.button`
   border-radius: 4px;
@@ -110,5 +116,20 @@ const AddButton = styled.button`
     font-size: 30px;
   }
 `
-const GroupWatchButton = styled.button`
+const GroupWatchButton = styled(AddButton)
+`
+  background: rbg(0, 0 , 0);
+`
+
+const SubTitle = styled.div`
+  color: rbg(249,249,249);
+  font-size:15px;
+  min-height: 20px;
+  margin-top: 20px;
+`
+const Description = styled.div`
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 16px;
+  color: rbg(249,249,249);
 `
