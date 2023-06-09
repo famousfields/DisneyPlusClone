@@ -5,7 +5,7 @@ function Movies() {
   return (
     <Container>
         <h4>
-            Reccomended for You
+            Recommended for You
         </h4>
         <Content>
             <Wrap>
